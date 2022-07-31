@@ -1,0 +1,81 @@
+.clock {
+  color: var(--font-main);
+  background: var(--bg-white-main);
+  border-color: var(--border-white-main);
+  border-radius: 7px;
+  position: fixed;
+  right: 10px;
+  top: 20%;
+  z-index: 1;
+  min-width: 360px;
+  cursor: pointer;
+  p {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    color: var(--font-main);
+    cursor: grab;
+  }
+  svg {
+    fill: var(--font-main);
+    width: 22px;
+    height: 22px;
+  }
+  .header {
+    padding: 10px 10px 0 20px;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    justify-content: space-between;
+    .flex {
+      display: flex;
+      justify-content: space-between;
+    }
+    .flex-icon {
+      margin-left: 10px;
+      display: flex;
+    }
+  }
+  .body {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .time {
+      padding: 0;
+      margin: 0;
+      font-size: 50px;
+      color: var(--font-main);
+      font-weight: 600;
+    }
+    .flex-button {
+      display: flex;
+      gap: 10px;
+      .start {
+        border: 1.5px solid var(--font-main);
+        padding: 6px 25px;
+        border-radius: 14px;
+        background: var(--bg-white-main);
+      }
+      .return {
+        background: var(--bg-white-main);
+        border: none;
+
+        svg {
+          height: 16px;
+          width: 16px;
+        }
+      }
+    }
+  }
+  .footer {
+    padding: 0 10px 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    .item{
+      cursor: pointer;
+    }
+    .active{
+      border-bottom: 2px solid var(--red-main) !important;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.tool {
+  display: flex;
+  position: fixed;
+  left: 315px;
+  background: var(--bg-white-main);
+  border-color: var(--border-white-main);
+  border-radius: 16px;
+  z-index: 2;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  width: 55px;
+  top: 0%;
+  margin-top: 22vh;
+  border-radius: 7px;
+  font-size: 12px;
+  .container-box {
+    padding: 0 10px;
+  }
+  .title {
+    text-align: center;
+    color: var(--font-main);
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  .list {
+    
+    .item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 0 10px 0;
+      .name {
+        color: var(--font-main);
+        font-size: 11px;
+        font-weight: 400;
+        cursor: pointer;
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          width: 24px;
+          fill: var(--font-main);
+          height: 24px;
+        }
+        .active {
+          color: var(--red-main);
+          svg {
+            fill: var(--red-main);
+          }
+        }
+      }
+    }
+    .active{
+      .name{
+        color: var(--red-main) !important;
+      }
+      .icon{
+        svg {
+          width: 24px;
+          fill: var(--red-main) !important;
+        }
+      }
+    }
+  }
+  .add {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px 0;
+  }
+  .setting {
+    border-top: 1px solid var(--border-white-main);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6px 0 12px 0;
+  }
+}
+
+@keyframes fadeIn-tool {
+  0% {
+
+  }
+  100% {
+    left: 315px;
+  }
+}
+@keyframes fadeOut-tool {
+  0% {
+
+  }
+  100% {
+    left: 8px;
+  }
+}

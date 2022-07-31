@@ -1,0 +1,100 @@
+
+.nav-top{
+    position: fixed;
+    left: 316px;
+    right: 8px;
+    top: 8px;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    .col{
+        display: flex;
+    }
+    span{
+      cursor: pointer;
+        min-width: 46px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        min-height: 36px;
+        max-height: 36px;
+        width: inherit;
+        padding: 6px 10px;
+        border-radius: 7px;
+        margin-right: 10px;
+        color: var(--font-main);
+        background: var(--bg-white-main);
+        border-color: var(--border-white-main);
+        img {
+            max-height: 30px;
+        }
+        .icon{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .invite{
+            background-color: royalblue !important;
+            border-radius: 7px;
+            border: none;
+            color: #fff;
+            margin-left: 6px;
+            padding: 3px 8px;
+        }
+    }
+}
+.modal-login {
+  .list-btn{
+    margin: 20px 0 0px 0;
+
+  }
+  .sign{
+    font-size: 14px !important;
+    font-weight:500;
+    width: 300px;
+    padding: 6px !important;
+    img{
+      max-height: 30px;
+      margin-right: 10px;
+    }
+  }
+  .sign.gg{
+    border: none !important;
+    color: var(--font-main);
+  }
+  .sign.email{
+    background-color: #db4437;
+    color: #fff;
+  }
+  .notice{
+    margin: 20px 0 40px 0;
+    width: 300px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    a{
+
+    }
+  }
+}
+@keyframes fadeIn-nav {
+    0% {
+   
+    }
+    100% {
+      left: 316px;
+    }
+  }
+@keyframes fadeOut-nav {
+    0% {
+   
+    }
+    100% {   
+      left: 8px;
+    }
+  }

@@ -1,0 +1,21 @@
+
+.space-view{
+    width: 100vw;
+    height: 100vh;
+    iframe{
+        position: fixed;
+        pointer-events: none;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        transform: translate(-50%, -50%);
+    }
+}
+.space-view iframe, .space-view video {
+    height: 86.25vw !important;
+}
+@media (min-aspect-ratio: 16 / 9){
+    .space-view iframe, .space-view video {
+        height: 86.25vw !important;
+    }
+}
