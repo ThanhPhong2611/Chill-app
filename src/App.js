@@ -18,6 +18,7 @@ function App() {
   const checkDevice = detectMob();
   return (
     <div className="App">
+
       {
         checkDevice ? <h1 className="text-center">
           Device not supported
