@@ -74,7 +74,7 @@ export default function Navbar() {
           <span>
             <a href="javascript:void(0)" style={{color : 'var(--font-main)'}}>
               <img src="/assets/images/logo.png" alt="logo" />
-              Life Chill
+    
             </a>
           </span>
           <span>
